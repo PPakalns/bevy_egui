@@ -22,6 +22,7 @@ open_url = ["webbrowser"]
 default_fonts = ["egui/default_fonts"]
 render = [
   "bevy_render",
+  "bevy_image",
   "bevy_asset",
   "encase",
   "bytemuck",
@@ -78,6 +79,7 @@ webbrowser = { version = "1.0.1", optional = true }
 bytemuck = { version = "1", optional = true }
 bevy_asset = { version = "0.15.0-dev", optional = true }
 bevy_render = { version = "0.15.0-dev", optional = true }
+bevy_image = { version = "0.15.0-dev", optional = true }
 encase = { version = "0.10", optional = true }
 wgpu-types = { version = "23.0", optional = true }
 
@@ -124,3 +126,20 @@ crossbeam-channel = "0.5.8"
 
 [workspace]
 members = ["run-wasm"]
+
+[patch.crates-io]
+bevy = { git = "https://github.com/bevyengine/bevy.git", rev = "8e28498" }
+bevy_render = { git = "https://github.com/bevyengine/bevy.git", rev = "8e28498" }
+bevy_image = { git = "https://github.com/bevyengine/bevy.git", rev = "8e28498" }
+bevy_ecs = { git = "https://github.com/bevyengine/bevy.git", rev = "8e28498" }
+bevy_app = { git = "https://github.com/bevyengine/bevy.git", rev = "8e28498" }
+bevy_derive = { git = "https://github.com/bevyengine/bevy.git", rev = "8e28498" }
+bevy_input = { git = "https://github.com/bevyengine/bevy.git", rev = "8e28498" }
+bevy_log = { git = "https://github.com/bevyengine/bevy.git", rev = "8e28498" }
+bevy_math = { git = "https://github.com/bevyengine/bevy.git", rev = "8e28498" }
+bevy_reflect = { git = "https://github.com/bevyengine/bevy.git", rev = "8e28498" }
+bevy_time = { git = "https://github.com/bevyengine/bevy.git", rev = "8e28498" }
+bevy_utils = { git = "https://github.com/bevyengine/bevy.git", rev = "8e28498" }
+bevy_winit = { git = "https://github.com/bevyengine/bevy.git", rev = "8e28498" }
+bevy_window = { git = "https://github.com/bevyengine/bevy.git", rev = "8e28498" }
+bevy_asset = { git = "https://github.com/bevyengine/bevy.git", rev = "8e28498" }

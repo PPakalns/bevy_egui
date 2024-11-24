@@ -1,9 +1,6 @@
-use bevy::{
-    prelude::*,
-    render::camera::RenderTarget,
-    window::{PresentMode, PrimaryWindow, WindowRef, WindowResolution},
-};
+use bevy::{prelude::*, render::camera::RenderTarget};
 use bevy_egui::{EguiContext, EguiPlugin, EguiUserTextures};
+use bevy_window::{PresentMode, PrimaryWindow, Window, WindowRef, WindowResolution};
 
 #[derive(Resource)]
 struct Images {

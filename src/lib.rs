@@ -97,11 +97,12 @@ use arboard::Clipboard;
 #[cfg(feature = "render")]
 use bevy_asset::{load_internal_asset, AssetEvent, Assets, Handle};
 #[cfg(feature = "render")]
+use bevy_image::{Image, ImageSampler};
+#[cfg(feature = "render")]
 use bevy_render::{
     extract_component::{ExtractComponent, ExtractComponentPlugin},
     extract_resource::{ExtractResource, ExtractResourcePlugin},
     render_resource::SpecializedRenderPipelines,
-    texture::{Image, ImageSampler},
     ExtractSchedule, Render, RenderApp, RenderSet,
 };
 
@@ -1038,7 +1039,7 @@ fn free_egui_textures_system(
 
     for image_event in image_events.read() {
         if let AssetEvent::Removed { id } = image_event {
-            egui_user_textures.remove_image(&Handle::<Image>::Weak(*id));
+            egui_user_textures.remove_image(&Handle::<Image>::Weak(id.clone()));
         }
     }
 }

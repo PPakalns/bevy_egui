@@ -3,6 +3,7 @@ use bevy::{
     prelude::*,
 };
 use bevy_egui::{EguiContexts, EguiPlugin, EguiSettings};
+use bevy_window::{Window, WindowPlugin};
 
 struct Images {
     bevy_icon: Handle<Image>,

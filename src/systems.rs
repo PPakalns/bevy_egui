@@ -26,7 +26,8 @@ use bevy_winit::{EventLoopProxy, WakeUp};
 #[cfg(feature = "render")]
 use bevy_asset::Assets;
 #[cfg(feature = "render")]
-use bevy_render::texture::Image;
+use bevy_image::Image;
+
 use std::{marker::PhantomData, time::Duration};
 
 #[allow(missing_docs)]

@@ -1,5 +1,6 @@
-use bevy::{prelude::*, window::PrimaryWindow, winit::WinitSettings};
+use bevy::{prelude::*, winit::WinitSettings};
 use bevy_egui::{EguiContexts, EguiPlugin};
+use bevy_window::{PrimaryWindow, Window};
 
 #[derive(Default, Resource)]
 struct OccupiedScreenSpace {
