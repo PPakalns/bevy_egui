@@ -97,6 +97,7 @@ bevy = { version = "0.15.0-dev", default-features = false, features = [
   "bevy_core_pipeline",
   "bevy_asset",
   "bevy_winit",
+  "bevy_window",
   "tonemapping_luts",
   "webgl2",
 ] }
