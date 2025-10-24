@@ -1563,7 +1563,7 @@ impl EguiClipboard {
 
 /// The ordering value used for [`bevy_picking`].
 #[cfg(feature = "picking")]
-pub const PICKING_ORDER: f32 = 1_000_000.0;
+pub const PICKING_ORDER: f32 = -1_000_000.0;
 
 /// Captures pointers on Egui windows for [`bevy_picking`].
 #[cfg(feature = "picking")]
